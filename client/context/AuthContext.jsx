@@ -26,25 +26,7 @@ export const AuthProvider=({children})=>{
         }
     }
 
-    //login fuction to handle user authentication and socket connection
-    // const login=async(state,credentials)=>{
-    //     try{
-    //        const {data}=await axios.post(`/api/auth/${state}`,credentials);
-    //        if(data.success){
-    //         setAuthUser(data.userData);
-    //         connectSocket(data.userData);
-    //         axios.defaults.headers.common["token"]=data.token;
-    //         setToken(data.token);
-    //         localStorage.setItem("token",data.token);
-    //         toast.success(data.message)
-    //        }else{
-    //         toast.error(data.message);
-    //        }
-    //     }catch(error){
-    //         toast.error(error.message);
-
-    //     }
-    //      }
+  
 
 
 
@@ -98,18 +80,7 @@ export const AuthProvider=({children})=>{
     }
 
 
-    //Update profile fuction to handle user profile updates
-    // const upadteProfile=async(body)=>{
-    //     try{
-    //         const {data}=await axios.put("/api/auth/update-profile",body);
-    //         if(data.success){
-    //             setAuthUser(data.user);
-    //             toast.success("Profile updated successfully")
-    //         }
-    //     }catch(error){
-    //         toast.error(error.message)
-    //     }
-    // }
+
 
     const upadteProfile = async (body) => {
   try {
